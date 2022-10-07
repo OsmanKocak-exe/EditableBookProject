@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bookFragment">
+
+    <fragment
+        android:id="@+id/bookFragment"
+        android:name="com.ok.bookproject.view.BookFragment"
+        android:label="BookFragment" >
+        <action
+            android:id="@+id/action_bookFragment_to_bookDetailsFragment"
+            app:destination="@id/bookDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDetailsFragment"
+        android:name="com.ok.bookproject.view.BookDetailsFragment"
+        android:label="BookDetailsFragment" >
+        <action
+            android:id="@+id/action_bookDetailsFragment_to_imageAPIFragment"
+            app:destination="@id/imageAPIFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageAPIFragment"
+        android:name="com.ok.bookproject.view.ImageAPIFragment"
+        android:label="ImageAPIFragment" />
+</navigation>
